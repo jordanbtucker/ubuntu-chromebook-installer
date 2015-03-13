@@ -11,3 +11,6 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 dpkg -i google-chrome-stable_current_amd64.deb
 export DEBIAN_FRONTEND=noninteractive; apt-get -f -y -q install
 touch "chrome.done"
+
+# Cleanup
+rm -fr /tmp/tmp.*
